@@ -27,7 +27,9 @@ terraform {
     # }
   }
 }
-
+provider "aws" {
+  region = var.aws_region
+}
 # Get AWS Account ID
 data "aws_caller_identity" "current" {}
 
