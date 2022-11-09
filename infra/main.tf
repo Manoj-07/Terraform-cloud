@@ -1,6 +1,6 @@
 # Create LANDING_BUCKET Bucket
 resource "aws_s3_bucket" "landing_bucket" {
-  bucket        = "b-${var.organization_name}-${var.environment}-logs"
+  bucket        = "b-${var.organization_name}-${var.environment}-tag"
   force_destroy = true
   tags = {
     Name        = "${var.organization_name}"
