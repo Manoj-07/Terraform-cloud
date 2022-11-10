@@ -9,3 +9,7 @@ variable "aws_secret_key" {
 variable "aws_region" {
 
 }
+
+variable "http-server" {
+    default = {}
+}
