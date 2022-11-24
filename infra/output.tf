@@ -5,3 +5,6 @@ output "bucket_name" {
 output "bucket_id" {
     value = aws_s3_bucket_acl.landing_bucket.id
 }
+output "bucket" {
+    value = aws_s3_bucket_acl.landing_bucket.id
+}
